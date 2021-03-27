@@ -19,14 +19,14 @@ Follow the instructions below to replicate the process our team has used to extr
 2. Create a new db named "pga_tour_stats_db" with Postgres as the user
 3. Right-click the new database and open a Query Tool
 4. In the Query Editor, click to the "Open File" button and navigate to the ETL Project Repo in your local drive
-5. Select the "pga_database.sql" file and run the create statements located in the file to create the 2 PGA Tour Stats tables
+5. Select the **"pga_database.sql"** file and run the create statements located in the file to create the 2 PGA Tour Stats tables
 6. Run the first two `select * from` statements at the bottom of the SQL query form to ensure that the tables have been created and the data types are reflected properly - NOTE: Do not close this pgAdmin session
 
 #### Create the Required DataFrames and Populate the PostgreSQL DB using a Jupyter Notebook
 1. From the Gitbash or Terminal session mentioned in step 3 of Setup Instructions, run `source activate PythonData` followed by `jupyter notebook` to launch a Jupyter session
 2. Create a new config.py file to store your credentials by selecting "New > Text File" in the upper right hand corner of the page
 3. Rename the Text File to "config.py" and enter your password into the body of the file with the format `password = "enter your password here"` then save the config.py file
-4. Open the `pga_etl.ipynb` file and select "Kernel > Restart & Run All" to extract the data from the CSV files into DataFrames, transform the data into the appropriate format, and load it into the corresponding PostgreSQL tables that were created in earlier steps
+4. Open the **"pga_etl.ipynb"** file and select "Kernel > Restart & Run All" to extract the data from the CSV files into DataFrames, transform the data into the appropriate format, and load it into the corresponding PostgreSQL tables that were created in earlier steps
 
 #### Confirm that ETL Worked as Expected
 1. Navigate back to the pgAdmin session that should still be running
