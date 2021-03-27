@@ -2,10 +2,10 @@
 ## Group 1: Eric Shaffer and Nick Hoyer
 
 ### Summary
-In this repo we demonstrate ETL processing for 2 separate CSV files related to PGA Tour Statistics. Our ETL Process includes the following steps & attributes:
+In this repo we demonstrate ETL processing for 2 separate CSV files related to PGA Tour Statistics. Our ETL Process includes the following steps:
 * **Extract** - Using CSVs sourced from [Kaggle](https://www.kaggle.com/datasets) we extracted PGA Tour Stats and loaded them into Pandas DataFrames for transformation
 * **Transform** - With the data loaded into DataFrames, we dropped unwanted columns and dropped any rows that had null values. We then formatted the column titles to be consistent across years 2017 and 2018 and made sure that data types were appropriate for the values in the columns.
-* **Load** - The data was loaded into a database created in PostgreSQL. This was done from the Jupyter Notebook using a SQL Database Connection Engine. 
+* **Load** - The data was loaded into a database created in PostgreSQL. This was done from a Jupyter Notebook using a SQL Database Connection Engine. 
 
 Follow the instructions below to replicate the process our team has used to extract, transform, and load the data from our data sources into a common database with a consistent format fit for analysis.
 
