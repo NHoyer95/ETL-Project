@@ -22,3 +22,12 @@ create table pga_tour_stats_2018(
 	avg_carry_distance_18 float,
 	sg_putting_per_round_18 float
 );
+
+select * from pga_tour_stats_2017;
+
+select * from pga_tour_stats_2018;
+
+select pga_tour_stats_2017.player, pga_tour_stats_2017.rounds_played_17, pga_tour_stats_2017.points_17, pga_tour_stats_2017.avg_score_17,
+pga_tour_stats_2018.rounds_played_18, pga_tour_stats_2018.points_18, pga_tour_stats_2018.avg_score_18
+from pga_tour_stats_2017
+inner join pga_tour_stats_2018 on pga_tour_stats_2017.player=pga_tour_stats_2018.player;
