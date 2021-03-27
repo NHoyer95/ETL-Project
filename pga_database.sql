@@ -24,6 +24,7 @@ select * from pga_tour_stats_2017;
 
 select * from pga_tour_stats_2018;
 
+-- Run this select statement last to verify that the tables can be joined --
 select pga_tour_stats_2017.player, pga_tour_stats_2017.rounds_played_17, pga_tour_stats_2017.points_17, pga_tour_stats_2017.avg_score_17,
 pga_tour_stats_2018.rounds_played_18, pga_tour_stats_2018.points_18, pga_tour_stats_2018.avg_score_18
 from pga_tour_stats_2017
