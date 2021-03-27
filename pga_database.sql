@@ -1,6 +1,3 @@
-drop table pga_tour_stats_2017, pga_tour_stats_2018
-
-
 create table pga_tour_stats_2017(
 	player varchar primary key,
 	rounds_played_17 float,
